@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_controllore_cod_time_impl.v" \
+"../../../../../CONTROLLORE_COD.srcs/sim_1/new/tb_controllore_cod.v" \
+
+# Do not sort compile order
+nosort

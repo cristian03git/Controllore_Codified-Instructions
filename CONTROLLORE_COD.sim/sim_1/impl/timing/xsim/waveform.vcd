@@ -1,0 +1,1935 @@
+$date
+   Thu May 29 21:51:53 2025
+$end
+
+$version
+  2024.2.0
+  $dumpfile ("waveform.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_controllore_cod $end
+$var reg 1 ! CLK $end
+$var reg 1 " RESETn $end
+$var reg 8 # ing_data [7:0] $end
+$var wire 8 $ out_data [7:0] $end
+$scope module uut $end
+$var wire 1 % CLK $end
+$var wire 1 & CLK_IBUF $end
+$var wire 1 ' CLK_IBUF_BUFG $end
+$var wire 4 ( NES [3:0] $end
+$var wire 1 ) NES__0 $end
+$var wire 1 * \NES_reg[0]_i_1_n_0  $end
+$var wire 1 + \NES_reg[1]_i_1_n_0  $end
+$var wire 1 , \NES_reg[1]_i_2_n_0  $end
+$var wire 1 - \NES_reg[2]_i_1_n_0  $end
+$var wire 1 . \NES_reg[2]_i_2_n_0  $end
+$var wire 1 / \NES_reg[3]_i_1_n_0  $end
+$var wire 1 0 \NES_reg[3]_i_4_n_0  $end
+$var wire 4 1 PRS [3:0] $end
+$var wire 1 2 RESETn $end
+$var wire 1 3 RESETn_IBUF $end
+$var wire 8 4 ing_data [7:0] $end
+$var wire 8 5 ing_data_IBUF [7:0] $end
+$var wire 8 $ out_data [7:0] $end
+$var wire 8 6 out_data_OBUF [7:0] $end
+$var wire 8 7 p_1_in [7:0] $end
+$var wire 4 8 result [3:0] $end
+$var wire 1 9 \result[0]_i_2_n_0  $end
+$var wire 1 : \result[1]_i_2_n_0  $end
+$var wire 1 ; \result[1]_i_3_n_0  $end
+$var wire 1 < \result[2]_i_2_n_0  $end
+$var wire 1 = \result[2]_i_3_n_0  $end
+$var wire 1 > \result[3]_i_1_n_0  $end
+$var wire 1 ? \result[3]_i_3_n_0  $end
+$var wire 1 @ \result[3]_i_4_n_0  $end
+$var wire 1 A status $end
+$scope module CLK_IBUF_inst $end
+$var wire 1 % I $end
+$var wire 1 & O $end
+$var wire 1 B OUT $end
+$var wire 1 C NLW_IBUFCTRL_INST_IBUFDISABLE_UNCONNECTED $end
+$var wire 1 D NLW_IBUFCTRL_INST_INTERMDISABLE_UNCONNECTED $end
+$var wire 1 E NLW_IBUFCTRL_INST_T_UNCONNECTED $end
+$var wire 1 F NLW_INBUF_INST_OSC_EN_UNCONNECTED $end
+$var wire 1 G NLW_INBUF_INST_VREF_UNCONNECTED $end
+$var wire 4 H NLW_INBUF_INST_OSC_UNCONNECTED [3:0] $end
+$upscope $end
+$scope module RESETn_IBUF_inst $end
+$var wire 1 2 I $end
+$var wire 1 3 O $end
+$var wire 1 I OUT $end
+$var wire 1 J NLW_IBUFCTRL_INST_IBUFDISABLE_UNCONNECTED $end
+$var wire 1 K NLW_IBUFCTRL_INST_INTERMDISABLE_UNCONNECTED $end
+$var wire 1 L NLW_IBUFCTRL_INST_T_UNCONNECTED $end
+$var wire 1 M NLW_INBUF_INST_OSC_EN_UNCONNECTED $end
+$var wire 1 N NLW_INBUF_INST_VREF_UNCONNECTED $end
+$var wire 4 O NLW_INBUF_INST_OSC_UNCONNECTED [3:0] $end
+$upscope $end
+$scope module ing_data_IBUF[0]_inst $end
+$var wire 1 P I $end
+$var wire 1 Q O $end
+$var wire 1 R OUT $end
+$var wire 1 S NLW_IBUFCTRL_INST_IBUFDISABLE_UNCONNECTED $end
+$var wire 1 T NLW_IBUFCTRL_INST_INTERMDISABLE_UNCONNECTED $end
+$var wire 1 U NLW_IBUFCTRL_INST_T_UNCONNECTED $end
+$var wire 1 V NLW_INBUF_INST_OSC_EN_UNCONNECTED $end
+$var wire 1 W NLW_INBUF_INST_VREF_UNCONNECTED $end
+$var wire 4 X NLW_INBUF_INST_OSC_UNCONNECTED [3:0] $end
+$upscope $end
+$scope module ing_data_IBUF[1]_inst $end
+$var wire 1 Y I $end
+$var wire 1 Z O $end
+$var wire 1 [ OUT $end
+$var wire 1 \ NLW_IBUFCTRL_INST_IBUFDISABLE_UNCONNECTED $end
+$var wire 1 ] NLW_IBUFCTRL_INST_INTERMDISABLE_UNCONNECTED $end
+$var wire 1 ^ NLW_IBUFCTRL_INST_T_UNCONNECTED $end
+$var wire 1 _ NLW_INBUF_INST_OSC_EN_UNCONNECTED $end
+$var wire 1 ` NLW_INBUF_INST_VREF_UNCONNECTED $end
+$var wire 4 a NLW_INBUF_INST_OSC_UNCONNECTED [3:0] $end
+$upscope $end
+$scope module ing_data_IBUF[2]_inst $end
+$var wire 1 b I $end
+$var wire 1 c O $end
+$var wire 1 d OUT $end
+$var wire 1 e NLW_IBUFCTRL_INST_IBUFDISABLE_UNCONNECTED $end
+$var wire 1 f NLW_IBUFCTRL_INST_INTERMDISABLE_UNCONNECTED $end
+$var wire 1 g NLW_IBUFCTRL_INST_T_UNCONNECTED $end
+$var wire 1 h NLW_INBUF_INST_OSC_EN_UNCONNECTED $end
+$var wire 1 i NLW_INBUF_INST_VREF_UNCONNECTED $end
+$var wire 4 j NLW_INBUF_INST_OSC_UNCONNECTED [3:0] $end
+$upscope $end
+$scope module ing_data_IBUF[3]_inst $end
+$var wire 1 k I $end
+$var wire 1 l O $end
+$var wire 1 m OUT $end
+$var wire 1 n NLW_IBUFCTRL_INST_IBUFDISABLE_UNCONNECTED $end
+$var wire 1 o NLW_IBUFCTRL_INST_INTERMDISABLE_UNCONNECTED $end
+$var wire 1 p NLW_IBUFCTRL_INST_T_UNCONNECTED $end
+$var wire 1 q NLW_INBUF_INST_OSC_EN_UNCONNECTED $end
+$var wire 1 r NLW_INBUF_INST_VREF_UNCONNECTED $end
+$var wire 4 s NLW_INBUF_INST_OSC_UNCONNECTED [3:0] $end
+$upscope $end
+$scope module ing_data_IBUF[4]_inst $end
+$var wire 1 t I $end
+$var wire 1 u O $end
+$var wire 1 v OUT $end
+$var wire 1 w NLW_IBUFCTRL_INST_IBUFDISABLE_UNCONNECTED $end
+$var wire 1 x NLW_IBUFCTRL_INST_INTERMDISABLE_UNCONNECTED $end
+$var wire 1 y NLW_IBUFCTRL_INST_T_UNCONNECTED $end
+$var wire 1 z NLW_INBUF_INST_OSC_EN_UNCONNECTED $end
+$var wire 1 { NLW_INBUF_INST_VREF_UNCONNECTED $end
+$var wire 4 | NLW_INBUF_INST_OSC_UNCONNECTED [3:0] $end
+$upscope $end
+$scope module ing_data_IBUF[5]_inst $end
+$var wire 1 } I $end
+$var wire 1 ~ O $end
+$var wire 1 !! OUT $end
+$var wire 1 "! NLW_IBUFCTRL_INST_IBUFDISABLE_UNCONNECTED $end
+$var wire 1 #! NLW_IBUFCTRL_INST_INTERMDISABLE_UNCONNECTED $end
+$var wire 1 $! NLW_IBUFCTRL_INST_T_UNCONNECTED $end
+$var wire 1 %! NLW_INBUF_INST_OSC_EN_UNCONNECTED $end
+$var wire 1 &! NLW_INBUF_INST_VREF_UNCONNECTED $end
+$var wire 4 '! NLW_INBUF_INST_OSC_UNCONNECTED [3:0] $end
+$upscope $end
+$scope module ing_data_IBUF[6]_inst $end
+$var wire 1 (! I $end
+$var wire 1 )! O $end
+$var wire 1 *! OUT $end
+$var wire 1 +! NLW_IBUFCTRL_INST_IBUFDISABLE_UNCONNECTED $end
+$var wire 1 ,! NLW_IBUFCTRL_INST_INTERMDISABLE_UNCONNECTED $end
+$var wire 1 -! NLW_IBUFCTRL_INST_T_UNCONNECTED $end
+$var wire 1 .! NLW_INBUF_INST_OSC_EN_UNCONNECTED $end
+$var wire 1 /! NLW_INBUF_INST_VREF_UNCONNECTED $end
+$var wire 4 0! NLW_INBUF_INST_OSC_UNCONNECTED [3:0] $end
+$upscope $end
+$scope module ing_data_IBUF[7]_inst $end
+$var wire 1 1! I $end
+$var wire 1 2! O $end
+$var wire 1 3! OUT $end
+$var wire 1 4! NLW_IBUFCTRL_INST_IBUFDISABLE_UNCONNECTED $end
+$var wire 1 5! NLW_IBUFCTRL_INST_INTERMDISABLE_UNCONNECTED $end
+$var wire 1 6! NLW_IBUFCTRL_INST_T_UNCONNECTED $end
+$var wire 1 7! NLW_INBUF_INST_OSC_EN_UNCONNECTED $end
+$var wire 1 8! NLW_INBUF_INST_VREF_UNCONNECTED $end
+$var wire 4 9! NLW_INBUF_INST_OSC_UNCONNECTED [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+0!!
+0"
+z"!
+b0 #
+z#!
+bx $
+z$!
+0%
+z%!
+x&
+z&!
+0'
+bz '!
+b1000 (
+0(!
+x)
+x)!
+x*
+0*!
+x+
+z+!
+x,
+z,!
+x-
+z-!
+x.
+z.!
+x/
+z/!
+x0
+bz 0!
+bx 1
+01!
+02
+x2!
+x3
+03!
+b0 4
+z4!
+bx 5
+z5!
+bx 6
+z6!
+bx 7
+z7!
+bx 8
+z8!
+x9
+bz 9!
+x:
+x;
+x<
+x=
+x>
+x?
+x@
+xA
+0B
+zC
+zD
+zE
+zF
+zG
+bz H
+0I
+zJ
+zK
+zL
+zM
+zN
+bz O
+0P
+xQ
+0R
+zS
+zT
+zU
+zV
+zW
+bz X
+0Y
+xZ
+0[
+z\
+z]
+z^
+z_
+z`
+bz a
+0b
+xc
+0d
+ze
+zf
+zg
+zh
+zi
+bz j
+0k
+xl
+0m
+zn
+zo
+zp
+zq
+zr
+bz s
+0t
+xu
+0v
+zw
+zx
+zy
+zz
+z{
+bz |
+0}
+x~
+$end
+
+#113
+0+
+0-
+0/
+b1xxx 1
+
+#114
+b0 6
+bx000x 7
+
+#115
+b1000 1
+
+#116
+b0xxx000x 7
+
+#117
+b0 7
+
+#135
+0&
+0)!
+02!
+03
+b0 5
+0Q
+0Z
+0c
+0l
+0u
+0~
+
+#155
+bx0xx 8
+
+#175
+00
+0:
+0?
+
+#176
+0<
+
+#178
+0.
+
+#208
+b0 8
+
+#247
+09
+
+#250
+0*
+1>
+
+#251
+0=
+0@
+
+#268
+0,
+1A
+
+#271
+0)
+
+#279
+0;
+
+#1253
+bx00x $
+
+#1270
+bx00xx00x $
+
+#1281
+b0 $
+
+#10000
+1!
+1%
+
+#10707
+1B
+
+#10842
+1&
+
+#20000
+0!
+0%
+
+#20707
+0B
+
+#20842
+0&
+
+#30000
+1!
+1%
+
+#30707
+1B
+
+#30842
+1&
+
+#40000
+0!
+1"
+0%
+12
+
+#40707
+0B
+
+#40729
+1I
+
+#40842
+0&
+
+#40864
+13
+
+#41000
+1)
+
+#50000
+1!
+1%
+
+#50707
+1B
+
+#50842
+1&
+
+#60000
+0!
+b1 #
+0%
+0(!
+01!
+b1 4
+1P
+0Y
+0b
+0k
+0t
+0}
+
+#60707
+0B
+
+#60726
+1R
+
+#60842
+0&
+
+#60861
+b1 5
+1Q
+
+#60932
+1:
+
+#70000
+1!
+1%
+
+#70707
+1B
+
+#70842
+1&
+
+#80000
+0!
+b11010 #
+0%
+0(!
+01!
+b11010 4
+0P
+1Y
+0b
+1k
+1t
+0}
+
+#80707
+0B
+
+#80709
+1m
+
+#80713
+1v
+
+#80726
+0R
+
+#80729
+1[
+
+#80842
+0&
+
+#80844
+b1001 5
+1l
+
+#80848
+b11001 5
+1u
+
+#80861
+b11000 5
+0Q
+
+#80864
+b11010 5
+1Z
+
+#80932
+0:
+
+#80960
+1@
+
+#81008
+1;
+
+#81041
+1,
+
+#81049
+1<
+
+#90000
+1!
+1%
+
+#90707
+1B
+
+#90842
+1&
+
+#100000
+0!
+b101111 #
+0%
+1'
+b0 (
+0(!
+01!
+b101111 4
+1P
+1Y
+1b
+1k
+0t
+1}
+
+#100113
+1+
+b0 1
+
+#100116
+b10000000 7
+
+#100187
+0>
+
+#100203
+b10 (
+
+#100245
+b10 8
+
+#100301
+b1010 8
+
+#100707
+0B
+
+#100709
+1d
+
+#100713
+0v
+
+#100717
+1!!
+
+#100726
+1R
+
+#100842
+0&
+
+#100844
+b11110 5
+1c
+
+#100848
+b1110 5
+0u
+
+#100852
+b101110 5
+1~
+
+#100861
+b101111 5
+1Q
+
+#100913
+1?
+
+#100932
+1:
+
+#100976
+1=
+
+#101039
+1*
+
+#101046
+b1110 8
+
+#101053
+b1111 8
+
+#101128
+b11 (
+
+#101675
+0'
+
+#110000
+1!
+1%
+
+#110707
+1B
+
+#110842
+1&
+
+#111675
+1'
+
+#111789
+b10000000 6
+
+#111790
+b11 1
+
+#111791
+b0 7
+
+#111830
+0+
+0,
+
+#111831
+0@
+
+#111833
+0*
+
+#111861
+0=
+
+#111883
+b1110 8
+
+#111889
+0;
+
+#111902
+b110 8
+
+#111905
+0<
+0?
+
+#111920
+b1 (
+
+#111922
+b0 (
+0:
+
+#111925
+1>
+
+#111930
+b100 8
+
+#111931
+b0 8
+
+#112971
+b10000000 $
+
+#120000
+0!
+b110101 #
+0%
+0(!
+01!
+b110101 4
+1P
+0Y
+1b
+0k
+1t
+1}
+
+#120707
+0B
+
+#120709
+0m
+
+#120713
+1v
+
+#120729
+0[
+
+#120842
+0&
+
+#120844
+b100111 5
+0l
+
+#120848
+b110111 5
+1u
+
+#120864
+b110101 5
+0Z
+
+#120904
+1:
+
+#120960
+1@
+
+#120980
+1=
+
+#121008
+1;
+
+#121017
+1?
+
+#121031
+b1000 8
+
+#121049
+b1010 8
+
+#121050
+b1110 8
+
+#121051
+0@
+
+#121122
+b110 8
+
+#121675
+0'
+
+#130000
+1!
+1%
+
+#130707
+1B
+
+#130842
+1&
+
+#131675
+1'
+
+#131789
+b0 6
+b110 7
+
+#131790
+b0 1
+
+#131792
+b110110 7
+
+#131883
+b111 8
+
+#131889
+0;
+
+#131925
+0>
+
+#131927
+1-
+1.
+
+#131930
+b101 8
+
+#132014
+b100 (
+
+#132971
+b0 $
+
+#140000
+0!
+b1001000 #
+0%
+1(!
+01!
+b1001000 4
+0P
+0Y
+0b
+1k
+0t
+0}
+
+#140707
+0B
+
+#140709
+0d
+1m
+
+#140710
+1*!
+
+#140713
+0v
+
+#140717
+0!!
+
+#140726
+0R
+
+#140842
+0&
+
+#140844
+b111001 5
+0c
+1l
+
+#140845
+1)!
+b1111001 5
+
+#140848
+b1101001 5
+0u
+
+#140852
+b1001001 5
+0~
+
+#140861
+b1001000 5
+0Q
+
+#140885
+1/
+10
+
+#140888
+0-
+0.
+
+#140913
+0?
+
+#140932
+0:
+
+#140960
+1@
+
+#140975
+b0 (
+
+#140976
+b1000 (
+0=
+
+#141031
+b1101 8
+
+#141039
+1*
+0/
+00
+
+#141040
+1-
+1.
+
+#141046
+b1001 8
+
+#141053
+b1000 8
+
+#141127
+b1100 (
+
+#141128
+b101 (
+
+#141675
+0'
+
+#150000
+1!
+1%
+
+#150707
+1B
+
+#150842
+1&
+
+#151675
+1'
+
+#151789
+b110110 6
+
+#151790
+0-
+b101 1
+
+#151792
+b110 7
+
+#151863
+0*
+
+#151877
+b1 (
+
+#151905
+b0 8
+1<
+
+#151952
+b0 (
+
+#151967
+1>
+
+#151968
+0.
+
+#152090
+b100 8
+
+#152928
+b110 $
+
+#152945
+b100110 $
+
+#152963
+b110110 $
+
+#160000
+0!
+b1011101 #
+0%
+1(!
+01!
+b1011101 4
+1P
+0Y
+1b
+1k
+1t
+0}
+
+#160707
+0B
+
+#160709
+1d
+
+#160713
+1v
+
+#160726
+1R
+
+#160842
+0&
+
+#160844
+b1001100 5
+1c
+
+#160848
+b1011100 5
+1u
+
+#160861
+b1011101 5
+1Q
+
+#160976
+1=
+
+#161033
+1:
+
+#161148
+b110 8
+
+#161675
+0'
+
+#170000
+1!
+1%
+
+#170707
+1B
+
+#170842
+1&
+
+#171675
+1'
+
+#171789
+b110 6
+
+#171790
+b0 1
+
+#171792
+b1010110 7
+
+#171861
+1+
+1,
+
+#171905
+b1110 8
+0<
+1?
+
+#171924
+b1101 8
+
+#171951
+b10 (
+
+#171967
+0>
+
+#171968
+1-
+1.
+
+#172055
+b110 (
+
+#172945
+b10110 $
+
+#172963
+b110 $
+
+#180000
+0!
+b1101111 #
+0%
+1(!
+01!
+b1101111 4
+1P
+1Y
+1b
+1k
+0t
+1}
+
+#180707
+0B
+
+#180713
+0v
+
+#180717
+1!!
+
+#180729
+1[
+
+#180842
+0&
+
+#180848
+b1001101 5
+0u
+
+#180852
+b1101101 5
+1~
+
+#180864
+b1101111 5
+1Z
+
+#181008
+1;
+
+#181039
+1*
+
+#181049
+b1111 8
+1<
+
+#181128
+b111 (
+
+#181675
+0'
+
+#190000
+1!
+1%
+
+#190707
+1B
+
+#190842
+1&
+
+#191675
+1'
+
+#191789
+b1010110 6
+
+#191790
+0-
+b111 1
+
+#191792
+b110 7
+
+#191830
+0+
+0,
+
+#191831
+0@
+
+#191833
+0*
+
+#191861
+0=
+
+#191877
+b11 (
+
+#191883
+b1110 8
+
+#191889
+0;
+
+#191905
+0<
+0?
+
+#191920
+b1 (
+
+#191922
+b0 (
+0:
+
+#191925
+1>
+
+#191927
+0.
+
+#192037
+b100 8
+
+#192090
+b0 8
+
+#192945
+b1000110 $
+
+#192963
+b1010110 $
+
+#200000
+0!
+b1101010 #
+0%
+1(!
+01!
+b1101010 4
+0P
+1Y
+0b
+1k
+0t
+1}
+
+#200707
+0B
+
+#200709
+0d
+
+#200726
+0R
+
+#200842
+0&
+
+#200844
+b1101011 5
+0c
+
+#200861
+b1101010 5
+0Q
+
+#200901
+1?
+
+#200932
+1:
+
+#200976
+1=
+1@
+
+#201033
+b1000 8
+
+#201047
+b1010 8
+
+#201048
+0=
+
+#201075
+1;
+
+#201675
+0'
+
+#210000
+1!
+1%
+
+#210707
+1B
+
+#210842
+1&
+
+#211675
+1'
+
+#211789
+b110 6
+b1010 7
+
+#211790
+b0 1
+
+#211792
+b1111010 7
+
+#211830
+1+
+1,
+
+#211833
+1*
+
+#211905
+1<
+0?
+
+#211920
+b10 (
+
+#211922
+b11 (
+0:
+
+#211925
+0>
+
+#211927
+1-
+1.
+
+#212014
+b111 (
+
+#212945
+b10110 $
+
+#212963
+b110 $
+
+#220000
+0!
+b1110000 #
+0%
+1(!
+01!
+b1110000 4
+0P
+0Y
+0b
+0k
+1t
+1}
+
+#220707
+0B
+
+#220709
+0m
+
+#220713
+1v
+
+#220729
+0[
+
+#220842
+0&
+
+#220844
+b1100010 5
+0l
+
+#220848
+b1110010 5
+1u
+
+#220864
+b1110000 5
+0Z
+
+#220960
+0@
+
+#221008
+0;
+
+#221031
+b10 8
+
+#221039
+0*
+1/
+10
+
+#221040
+0-
+0.
+
+#221041
+0+
+0,
+
+#221049
+b0 8
+0<
+
+#221127
+b11 (
+
+#221128
+b1010 (
+
+#221131
+b1000 (
+
+#221675
+0'
+
+#230000
+1!
+1%
+
+#230707
+1B
+
+#230842
+1&
+
+#231675
+1'
+
+#231788
+0/
+b1000 1
+
+#231789
+b1111010 6
+
+#231792
+b1010 7
+
+#231862
+1>
+
+#231879
+b0 (
+
+#232928
+b10 $
+
+#232945
+b1100010 $
+
+#232960
+b1101010 $
+
+#232963
+b1111010 $
+
+#240000
+0!
+b10001111 #
+0%
+0(!
+11!
+b10001111 4
+1P
+1Y
+1b
+1k
+0t
+0}
+
+#240707
+0B
+
+#240709
+1d
+1m
+
+#240710
+0*!
+
+#240711
+13!
+
+#240713
+0v
+
+#240717
+0!!
+
+#240726
+1R
+
+#240729
+1[
+
+#240842
+0&
+
+#240844
+b1111100 5
+1c
+1l
+
+#240845
+0)!
+b111100 5
+
+#240846
+12!
+b10111100 5
+
+#240848
+b10101100 5
+0u
+
+#240852
+b10001100 5
+0~
+
+#240861
+b10001101 5
+1Q
+
+#240864
+b10001111 5
+1Z
+
+#240885
+00
+
+#240888
+1.
+
+#240913
+1?
+
+#240918
+10
+
+#240932
+1:
+
+#240960
+1@
+
+#240976
+1=
+
+#241008
+1;
+
+#241022
+1,
+
+#241049
+1<
+
+#241675
+0'
+
+#250000
+1!
+1%
+
+#250707
+1B
+
+#250842
+1&
+
+#251675
+1'
+
+#251788
+1+
+1-
+1/
+b0 1
+
+#251789
+b1010 6
+b0 7
+
+#251791
+b10000000 7
+
+#251862
+0>
+
+#251875
+b100 (
+
+#251878
+b110 (
+
+#251879
+b1110 (
+
+#251918
+b100 8
+
+#251920
+b110 8
+
+#251925
+1*
+
+#251976
+b1110 8
+
+#251992
+b1111 8
+
+#252014
+b1111 (
+
+#252945
+b11010 $
+
+#252963
+b1010 $
+
+#260000
+0!
+b11110000 #
+0%
+1(!
+11!
+b11110000 4
+0P
+0Y
+0b
+0k
+1t
+1}
+
+#260707
+0B
+
+#260709
+0d
+0m
+
+#260710
+1*!
+
+#260713
+1v
+
+#260717
+1!!
+
+#260726
+0R
+
+#260729
+0[
+
+#260842
+0&
+
+#260844
+b10000011 5
+0c
+0l
+
+#260845
+1)!
+b11000011 5
+
+#260848
+b11010011 5
+1u
+
+#260852
+b11110011 5
+1~
+
+#260861
+b11110010 5
+0Q
+
+#260864
+b11110000 5
+0Z
+
+#260913
+0?
+
+#260932
+0:
+
+#260960
+0@
+
+#260976
+0=
+
+#261008
+0;
+
+#261031
+b111 8
+
+#261046
+b11 8
+
+#261049
+b1 8
+0<
+
+#261053
+b0 8
+
+#261675
+0'
+
+#270000
+1!
+1%
+
+#270707
+1B
+
+#270842
+1&
+
+#271675
+1'
+
+#271788
+0+
+0-
+0/
+b1000 1
+
+#271789
+b10000000 6
+
+#271790
+b1111 1
+
+#271791
+b0 7
+
+#271830
+0,
+
+#271862
+1>
+
+#271875
+b1011 (
+
+#271878
+b1001 (
+
+#271879
+b1 (
+
+#271924
+00
+
+#271925
+0*
+
+#271927
+0.
+
+#272014
+b0 (
+
+#272928
+b1000 $
+
+#272960
+b0 $
+
+#272971
+b10000000 $
+
+#280000
+0!
+0%
+
+#280707
+0B
+
+#280842
+0&
+
+#281675
+0'
+
+#290000
+1!
+1%
+
+#290707
+1B
+
+#290842
+1&
+
+#291675
+1'
+
+#291788
+b111 1
+
+#291789
+b0 6
+
+#291790
+b0 1
+
+#291791
+b10000000 7
+
+#291792
+b11110000 7
+
+#291830
+1+
+1,
+
+#291833
+1*
+
+#291920
+b10 (
+
+#291922
+b11 (
+
+#291924
+1/
+10
+
+#291925
+0>
+
+#291927
+1-
+1.
+
+#292014
+b111 (
+
+#292015
+b1111 (
+
+#292971
+b0 $
+
+#300000
+0!
+0"
+0%
+02
+
+#300707
+0B
+
+#300729
+0I
+
+#300842
+0&
+
+#300864
+03
+
+#301000
+0)
+
+#301202
+b1000 (
+
+#301675
+0'
+
+#310000
+1!
+1%
+
+#310707
+1B
+
+#310842
+1&
+
+#311675
+1'
+
+#311788
+0+
+0-
+0/
+b1000 1
+
+#311791
+b1110000 7
+
+#311792
+b0 7
+
+#311862
+1>
+
+#311925
+0*
+
+#320000
+0!
+0%
+
+#320707
+0B
+
+#320842
+0&
+
+#321675
+0'
+
+#330000
+1!
+1%
+
+#330707
+1B
+
+#330842
+1&
+
+#331675
+1'

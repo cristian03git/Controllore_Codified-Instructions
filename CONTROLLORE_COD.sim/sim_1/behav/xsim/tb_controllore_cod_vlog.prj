@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CONTROLLORE_COD.srcs/sources_1/new/controllore_cod.v" \
+"../../../../CONTROLLORE_COD.srcs/sim_1/new/tb_controllore_cod.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
