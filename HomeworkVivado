@@ -1,0 +1,65 @@
+Titolo: Progetto di un Controllore a Istruzioni Codificate per Operazioni su Dati a 4 Bit
+
+Obiettivo dell'esercizio:
+Progettare, sintetizzare e analizzare un controllore digitale in Verilog o VHDL che prenda in ingresso una parola a 8 bit. I primi 4 bit rappresentano un'istruzione, i secondi 4 bit rappresentano un dato. Il controllore deve elaborare il dato in base all'istruzione ricevuta e produrre in uscita un byte (8 bit) composto da:
+
+* I 4 bit di codice di stato, generati in base all'istruzione eseguita (MSB)
+* I 4 bit del risultato dell'operazione (LSB)
+
+Contesto applicativo:
+Il circuito simula un microcontrollore che riceve comandi da una linea seriale industriale a 8 bit. Ogni comando è diviso in:
+
+* Istruzione (4 MSB): specifica l'operazione da effettuare
+* Dato (4 LSB): rappresenta il valore da elaborare
+
+L'unità di controllo elabora il dato secondo l'istruzione ricevuta e restituisce un codice di stato (4 bit) e il risultato (4 bit) concatenati in un'uscita a 8 bit.
+
+Set di Istruzioni (4 MSB):
+
+| Istruzione | Operazione                     | Codice di Stato |
+| ---------- | ------------------------------ | --------------- |
+| 0000       | Pass-through (dato inalterato) | 0001            |
+| 0001       | Inverti bit                    | 0010            |
+| 0010       | Somma 1 modulo 16 (dato + 1)   | 0011            |
+| 0011       | Bit shift a sinistra di 1      | 0100            |
+| 0100       | Bit shift a destra di 1        | 0101            |
+| 0101       | NAND tra bit pari e dispari    | 0110            |
+| 0110       | Se bit\[0] = 1, inverti tutto  | 0111            |
+| 0111       | Reset (output = 0000)          | 1000            |
+| altro      | Ignora istruzione              | 1111            |
+
+Consegna tecnica su Vivado:
+
+1. Implementare il controllore in Verilog o VHDL.
+2. L'uscita deve essere un bus da 8 bit: i primi 4 bit contengono il codice di stato, i successivi 4 il risultato.
+3. Simulare in Vivado almeno 10 istruzioni diverse.
+4. Creare un progetto Vivado con FPGA target (es. Basys 3 - Artix-7).
+5. Impostare il clock a 50 MHz nel file di constraint (.xdc).
+6. Stimare le risorse hardware utilizzate: LUT, FF, slice, eventualmente BRAM (se usata).
+7. Ottimizzare il design per raggiungere 250 MHz:
+
+   * Modalità out-of-context (OOC)
+   * Ottimizzazione timing avanzata
+   * Rimozione logica ridondante
+8. Riportare il valore del Critical Path (Maximum Delay) e calcolare la frequenza massima raggiungibile.
+9. Commentare il compromesso area-performance osservato (bilanciamento tra LUT e timing).
+
+Output attesi:
+
+* Codice sorgente del controllore
+* Testbench di simulazione
+* Screenshot del report di timing e del report delle risorse
+* Descrizione del critical path ottenuto
+
+Clock Constraint (esempio per Basys 3):
+
+```
+create_clock -period 20.000 -name sys_clk -waveform {0 10} [get_ports clk]
+```
+
+Note:
+
+* L'uscita a 8 bit può essere gestita come `output [7:0] out_data`, con `out_data[7:4] = status`, `out_data[3:0] = result`.
+* Se necessario, implementare registro di uscita per mantenere i dati validi su clock.
+* Il progetto deve essere calibrato con priorita' al timing (obiettivo: 250 MHz post-place and route).
+
