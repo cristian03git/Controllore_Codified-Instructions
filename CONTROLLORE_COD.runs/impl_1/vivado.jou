@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu May 29 22:21:11 2025
+# Process ID         : 6084
+# Current directory  : C:/Users/Cristian/Desktop/Progetti_Vivado/CONTROLLORE_COD/CONTROLLORE_COD.runs/impl_1
+# Command line       : vivado.exe -log controllore_cod.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source controllore_cod.tcl -notrace
+# Log file           : C:/Users/Cristian/Desktop/Progetti_Vivado/CONTROLLORE_COD/CONTROLLORE_COD.runs/impl_1/controllore_cod.vdi
+# Journal file       : C:/Users/Cristian/Desktop/Progetti_Vivado/CONTROLLORE_COD/CONTROLLORE_COD.runs/impl_1\vivado.jou
+# Running On         : WIN-BCVJMC16P3P
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : virt-7.2
+# CPU Frequency      : 1000 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 10727 MB
+# Swap memory        : 671 MB
+# Total Virtual      : 11398 MB
+# Available Virtual  : 4209 MB
+#-----------------------------------------------------------
+source controllore_cod.tcl -notrace
